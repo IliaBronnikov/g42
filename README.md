@@ -8,21 +8,31 @@ This Python script reads a CSV file containing contact information with columns 
 
 ## Example Input (input_data.csv)
 id;phone;dob
+
 U001;971542719583;02.01.1990
+
 U002;058_510_8603;Apr-05-2004
+
 U003;+1-415-555-2671;5.22.1997
 
 ## Example Output (normalized_contacts.csv)
 id;phone;dob
+
 U001;+971542719583;1990-01-02
+
 U002;+971585108603;2004-04-05
+
 U003;+14155552671;1997-05-22
 
 ## Example logs during process
 Starting processing file input_data.csv - 2025-09-22 11:11:11
+
 Processed 50 rows
+
 Processed 100 rows
+
 Processing file input_data.csv done.
+
 Process time - 10 sec 
 
 Processed rows: 110
