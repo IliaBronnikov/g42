@@ -36,7 +36,9 @@ Processing file input_data.csv done.
 Process time - 10 sec 
 
 Processed rows: 110
+
 Successfully normalized: 108
+
 Skipped rows: 2
 
 Reasons for skipping:
@@ -44,14 +46,16 @@ Reasons for skipping:
  - id=U009: Phone parse error: Invalid phone number
 
 ## Requirements
-- Python 3.11+
+- Python 3.13+
 - Packages: `phonenumbers`, `dateparser`
 
 ## How to Run
 
 ### Using Python directly
 
+```python
 python normalize_contacts.py
+```
 
 The script expects `input_data.csv` in the same directory and creates `normalized_contacts.csv`.
 
@@ -59,10 +63,12 @@ The script expects `input_data.csv` in the same directory and creates `normalize
 
 1. Build the Docker image:
 
+```
 docker build -t normalize_contacts .
+```
 
 2. Run the container (mount current directory to `/app` inside container):
-
+```
 docker run --rm -v $(pwd):/app normalize_contacts
-
+```
 This command runs the script inside a container, reading `input_data.csv` and writing `normalized_contacts.csv` to your current directory.
