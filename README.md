@@ -13,10 +13,10 @@ U002;058_510_8603;Apr-05-2004
 U003;+1-415-555-2671;5.22.1997
 
 ## Example Output (normalized_contacts.csv)
-id;phone;dob \n
-U001;+971542719583;1990-01-02 \n
-U002;+971585108603;2004-04-05 \n
-U003;+14155552671;1997-05-22 \n
+id;phone;dob
+U001;+971542719583;1990-01-02
+U002;+971585108603;2004-04-05
+U003;+14155552671;1997-05-22
 
 ## Example logs during process
 Starting processing file input_data.csv - 2025-09-22 11:11:11
